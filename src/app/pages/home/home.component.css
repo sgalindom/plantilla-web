@@ -1,0 +1,144 @@
+/* Reinicio básico y configuración global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor principal tipo "hero" */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ocupa toda la pantalla */
+  .hero {
+    background: url('https://clinicalariviera.com/wp-content/uploads/2021/02/tu-imagen.jpg') no-repeat center center/cover;
+  }
+  
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Capa oscura para resaltar el contenido */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Contenido principal dentro del hero */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 2rem;
+  color: #fff;
+}
+
+/* Encabezado: logo y subtítulo */
+.hero-header {
+  margin-bottom: 1rem;
+}
+
+.clinic-logo {
+  max-width: 150px;
+  margin-bottom: 0.5rem;
+}
+
+.clinic-subtitle {
+  font-style: italic;
+  color: #fff;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+/* Título principal y subtítulo */
+.hero-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Label oculto para accesibilidad */
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Estilos para el select */
+.search-bar select {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  color: #333;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  font-family: 'Poppins', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Estilos para el botón */
+.search-btn {
+  background-color: #007bff;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .hero-content {
+    max-width: 90%;
+    padding: 1rem;
+  }
+  .hero-title {
+    font-size: 1.5rem;
+  }
+}

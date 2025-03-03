@@ -1,0 +1,7 @@
+/* Estilos generales del layout */
+.layout-main {
+    min-height: calc(100vh - 120px); /* Ajusta según la altura del header/footer */
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
